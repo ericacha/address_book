@@ -2,7 +2,7 @@
 
 <b>Description</b>
 
-Address app that allows the user to enter their name, last name, address. Let's the user click on the listed name and show address.
+Address app let's the user to enter their name, last name and address. Allows the user click on the listed name and show address.
 
 
 April 13th, 2015 | Erica Cha & Kelly de Vries
