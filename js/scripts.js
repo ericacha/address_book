@@ -4,8 +4,10 @@ $(document).ready(function(){
 
         var inputtedFirstName = $("input#new-first-name").val();
         var inputtedLastName = $("input#new-last-name").val();
-        var inputtedAddress = $("input#new-address").val();
-        var newContact = {firstName: inputtedFirstName, lastName: inputtedLastName, address: inputtedAddress };
+        var inputtedStreet = $("input#new-street").val();
+        var inputtedCity = $("input#new-city").val();
+        var inputtedState = $("input$new-state").val();
+        var newContact = {firstName: inputtedFirstName, lastName: inputtedLastName, street: inputtedStreet, city: inputtedCity, state: inputtedState };
 
         $("ul#contacts").append("<li><span class='contact'>" + newContact.firstName + " " + newContact.lastName + "</span></li>");
 
