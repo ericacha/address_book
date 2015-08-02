@@ -62,17 +62,20 @@ img {
     width: 63%;
   }
 
-.col-md-4 {
-  margin-left:11%;
-}
 
-.col-md-6 {
-
-  margin-left:5%;
-}
 
 @media screen and (max-width: 1250px) {
   .jumbotron > img{
       display:none;
     }
+}
+
+.col-md-6 {
+
+margin-left:8%;
+
+}
+
+.col-md-4 {
+  margin-left:-2%;
 }
