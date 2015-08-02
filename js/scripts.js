@@ -7,12 +7,14 @@ $(document).ready(function() {
     var inputtedStreet = $("input#new-street").val();
     var inputtedCity = $("input#new-city").val();
     var inputtedState = $("input#new-state").val();
+        var inputtedNumber = $("input#new-number").val();
     //the method fullAddress() will call back the properties on the object
     var newAddress = { street: inputtedStreet,
                        city: inputtedCity,
                        state: inputtedState,
+                        number: inputtedNumber,
                        fullAddress: function() {
-                         return this.street + ", " + this.city + ", " + this.state;
+                         return this.street + ", " + this.city + ", " + this.state + ", " + this.number;
                        }
                      };
     var newContact = { firstName: inputtedFirstName,
@@ -27,6 +29,7 @@ $(document).ready(function() {
     $("input#new-street").val("");
     $("input#new-city").val("");
     $("input#new-state").val("");
+      $("input#new-number").val("");
 
     $(".contact").last().click(function() {
 
@@ -35,6 +38,7 @@ $(document).ready(function() {
       $(".first-name").text(newContact.firstName);
       $(".last-name").text(newContact.lastName);
       $(".address").text(newContact.address);
+      $(".number").text(newContact.number);
     });
   });
 });
