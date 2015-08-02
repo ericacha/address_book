@@ -7,7 +7,7 @@ $(document).ready(function() {
     var inputtedStreet = $("input#new-street").val();
     var inputtedCity = $("input#new-city").val();
     var inputtedState = $("input#new-state").val();
-    //the method fullAddress() will call back the properties on the object 
+    //the method fullAddress() will call back the properties on the object
     var newAddress = { street: inputtedStreet,
                        city: inputtedCity,
                        state: inputtedState,
@@ -29,6 +29,7 @@ $(document).ready(function() {
     $("input#new-state").val("");
 
     $(".contact").last().click(function() {
+
       $("#show-contact").show();
       $("#show-contact h2").text(newContact.firstName + " " + newContact.lastName);
       $(".first-name").text(newContact.firstName);
